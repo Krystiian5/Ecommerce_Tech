@@ -1,4 +1,4 @@
-![image alt](https://github.com/Krystiian5/Ecommerce_Tech/blob/main/Logo.png?raw=true)
+![image alt](https://github.com/Krystiian5/Ecommerce_Tech/blob/main/Data/Logo.png?raw=true)
 # Análisis de Beneficios de Ecommerce_Tech 💶
 En este proyecto vamos a trabajar sobre un conjunto de datos para una empresa llamada **Ecommerce_Tech**, en el que vamos a analizar los **beneficios** obtenidos, tanto en un determinado momento, como a lo largo del tiempo, así como entender el comportamiento de los clientes, según su edad, género, región, tipo de producto y método de pago.
 
