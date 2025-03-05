@@ -31,7 +31,7 @@ En este proyecto vamos a trabajar sobre un conjunto de datos para una empresa ll
 	-- Ecommerce_Tech.xlsx
 
 ```
-## Resultados y Conclusiones 📋
+## 4. Resultados y Conclusiones 📋
 - En términos generales vemos lo siguiente:
 	- El producto que genera más beneficios son los smartwatch y el que menos sería el Laptop.
 	- La región que genera más beneficios es Sud América y la que menos Europa.
