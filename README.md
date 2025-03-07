@@ -9,8 +9,8 @@ El objetivo principal de este proyecto es crear un dashboard interactivo que fac
 --- Data
 	-- ecommerce_product_sales #Datos Originales
 	-- Logo.png
---- Excel
-	-- Ecommerce_Tech.xlsx
+--- Excels
+	-- Carga_Transform_Datos.xlsx
 
 ```
 ## 3. Descripción de las columnnas del conjunto de datos
@@ -38,7 +38,13 @@ Esta hoja contiene las siguientes columnas clave:
 ## 1. Transformación y Limpieza de Datos 🗂️
 A continuación, se explicarán los pasos que se han seguido para transformar y limpiar los datos del csv original "ecommerce_product_sales.csv"
 - Se crea Excel "Carga_Tansf_Datos.xlsx y se carga el conjunto de datos original creando una tabla.
-- 
+- Se crea una nueva hoja llamada "Datos_Transformados".
+- Se comprueba si hay duplicados. En este caso no se encuentran duplicados.
+- Crear una hoja nueva de "Tablas_Auxiliares" para traducir del inglés al español encabezados, Productos, Categoría, Género, Método de pago y Región.
+- Ocultar columnas con los datos en inglés.
+- Columnas Precio, Descuento y Ventas Totales no están reconocidas como números ya que están situados a la izquierda. Esto es debido a que hay que cambiar el "punto" por la "coma". Lo reemplazamos.
+- Cambiamos el formato de Precio y Ventas totales a número y el de Descuento a formato porcentaje.
+
 
 
 Añadir una nueva columna (Género_) en la cual sustituyamos las palabras en inglés “Male” y “Female” por “Masculino” y “Femenino” y ocultamos la de Género, con la fórmula Sustituir.
