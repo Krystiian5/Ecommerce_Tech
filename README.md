@@ -8,14 +8,16 @@ El objetivo principal de este proyecto es crear un dashboard interactivo que fac
 ```bash
 --- Data
 	-- ecommerce_product_sales #Datos Originales
+	-- Datos_Transformados.csv
 	-- Logo.png
 --- Excels
 	-- Carga_Transform_Datos.xlsx
+	-- Analisis_Datos.xlsx
 
 ```
 ## 3. Descripción de las columnnas del conjunto de datos
 
-**Hoja: Ecommerce_Ventas_Productos.csv**
+**Hoja: Ecommerce_Product_Sales.csv**
 Esta hoja contiene las siguientes columnas clave:
 ### Datos de los usuarios:
 - **Venta_ID:** Identificador único de cada venta.
@@ -50,7 +52,13 @@ A continuación, se explicarán los pasos que se han seguido para transformar y 
 - Crear nueva columna "Cantidad_Descontada": Nos sirve para calcular el total del dinero descontado.
 - Guardar Hoja Datos transformados en un archivo .csv
 
-## 5. Análisis Descriptivo de los Datos 📈
+## 5. Análisis Descriptivo Numérico de los Datos 📈
+- Cargamos datos nuevo excel de Datos_Transformados.
+- Eliminamos las columnnas duplicadas y ocultas del conjunto de datos anterior.
+- Creamos una nnueva hoja llamada "Análisis_Descriptivo_Num" en la que vamos a analizar todas las columnas numéricas.
+- **Precio:**
+- **Edad:** Estadística Descriptiva. Crear gráfico mediante una tabla dinámica y un *box plot:*
+	- El primer cuartil de mis datos (el 25%) está por debajo de 30; el segundo cuartil (el 50%) de mis datos están por encima o por abajo de 42; el tercer cuartil (el 75%) de mis datos está por debajo de 54. Vemos que no hay outliers.
 
 
 ## 4. Resultados y Conclusiones 📋
