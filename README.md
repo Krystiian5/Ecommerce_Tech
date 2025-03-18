@@ -52,14 +52,29 @@ A continuación, se explicarán los pasos que se han seguido para transformar y 
 - Crear nueva columna "Cantidad_Descontada": Nos sirve para calcular el total del dinero descontado.
 - Guardar Hoja Datos transformados en un archivo .csv
 
-## 5. Análisis Descriptivo Numérico de los Datos 📈
+## 5. Análisis Descriptivo de los Datos 📈
 - Cargamos datos nuevo excel de Datos_Transformados.
 - Eliminamos las columnnas duplicadas y ocultas del conjunto de datos anterior.
-- Creamos una nnueva hoja llamada "Análisis_Descriptivo_Num" en la que vamos a analizar todas las columnas numéricas.
-- **Precio:**
-- **Edad:** Estadística Descriptiva. Crear gráfico mediante una tabla dinámica y un *box plot:*
-	- El primer cuartil de mis datos (el 25%) está por debajo de 30; el segundo cuartil (el 50%) de mis datos están por encima o por abajo de 42; el tercer cuartil (el 75%) de mis datos está por debajo de 54. Vemos que no hay outliers.
 
+**5.1 Análisis Descriptivo Numérico de los Datos:**
+
+Creamos una nueva hoja llamada "Análisis_Descriptivo_Num" en la que vamos a analizar todas las columnas numéricas.
+- **Precio:** Analizamos los datos mediante Estadística Descriptiva y vemos que tiene una curtosis Platicúrtica y es simétrica. Creamos gráfico y un *box plot:*
+	- El primer cuartil de mis datos (el 25%) está por debajo de 399,07€; el segundo cuartil (el 50%) de mis datos están por encima o por abajo de 773€; el tercer cuartil (el 75%) de mis datos está por debajo de 1.137€. Vemos que no hay outliers.
+- **Cantidad:** Analizamos los datos mediante Estadística Descriptiva y vemos que tiene una curtosis Platicúrtica y es simétrica. Creamos gráfico mediante una tabla dinámica y un *box plot:*
+	- El primer cuartil de mis datos (el 25%) está por debajo de 3; el segundo cuartil (el 50%) de mis datos están por encima o por abajo de 5; el tercer cuartil (el 75%) de mis datos está por debajo de 8. Vemos que no hay outliers.
+- **Edad:** Analizamos los datos mediante Estadística Descriptiva y vemos que tiene una curtosis Platicúrtica y es simétrica. Creamos gráfico mediante una tabla dinámica y un *box plot:*
+	- El primer cuartil de mis datos (el 25%) está por debajo de 30; el segundo cuartil (el 50%) de mis datos están por encima o por abajo de 42; el tercer cuartil (el 75%) de mis datos está por debajo de 54. Vemos que no hay outliers.
+- **Descuento:** Analizamos los datos mediante Estadística Descriptiva y vemos que tiene una curtosis Platicúrtica con una asimetría negativa. Creamos gráfico mediante una tabla dinámica y un *box plot:*
+	- El primer cuartil de mis datos (el 25%) está por debajo del 7%; el segundo cuartil (el 50%) de mis datos están por encima o por abajo del 15%; el tercer cuartil (el 75%) de mis datos está por debajo del 23%. Vemos que no hay outliers.
+- **Cantidad Descontada:** Analizamos los datos mediante Estadística Descriptiva y vemos que tiene una curtosis Platicúrtica con una asimetría positiva. Creamos gráfico y un *box plot:*
+	- El primer cuartil de mis datos (el 25%) está por debajo de 133€; el segundo cuartil (el 50%) de mis datos están por encima o por abajo de 372€; el tercer cuartil (el 75%) de mis datos está por debajo de 888€. Vemos que hay outliers. Estos tienen sentido ya que hay cantidades descontadas más elevadas y esto puede ser debido al número de cantidades vendidas (a mayor cantidad, mayor descuento).
+- **Ventas Totales:** Analizamos los datos mediante Estadística Descriptiva y vemos que tiene una curtosis Platicúrtica con una asimetría positiva. Creamos gráfico y un *box plot:*
+	- El primer cuartil de mis datos (el 25%) está por debajo de 1.151€; el segundo cuartil (el 50%) de mis datos están por encima o por abajo de 2.756€; el tercer cuartil (el 75%) de mis datos está por debajo de 5.321€. Vemos que hay outliers. Estos tienen sentido ya que hay ventas mayores debido a que hay transacciones con mayores cantidades vendidas (a mayor cantidad vendida por transacción, mayor la venta total).
+
+**5.2 Análisis Descriptivo Categórico de los Datos:**
+
+Creamos una nueva hoja llamada "Análisis_Descriptivo_Categ" en la que vamos a analizar todas las columnas categóricas.
 
 ## 4. Resultados y Conclusiones 📋
 - En términos generales vemos lo siguiente:
