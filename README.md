@@ -74,7 +74,20 @@ Creamos una nueva hoja llamada "Análisis_Descriptivo_Num" en la que vamos a ana
 
 **5.2 Análisis Descriptivo Categórico de los Datos:**
 
-Creamos una nueva hoja llamada "Análisis_Descriptivo_Categ" en la que vamos a analizar todas las columnas categóricas.
+Creamos una nueva hoja llamada "Análisis_Descriptivo_Categ" en la que vamos a analizar todas las columnas categóricas mediante tablas dinámicas.
+
+- **Produto:** Vemos que se venden todos más o menos por igual, destacando por muy poco el Reloj Inteligente.
+- **Categoría:** En cuanto a las dos categorías, vemos que la de electrónica es la predominante con un 80% de las ventas totales.
+- **Género:** En cuanto al género, vemos que las ventas se distribuyen prácticamente a partes iguales.
+- **Método de Pago:** Los 4 métodos de pago son utilizados a partes iguales, destacando por muy poco la transferencia bancaria.
+- **Región:** Las ventas se distribuyen por igual en las distintas regiones, destacando por muy poco América del Sur.
+- **Rango de Edad:** En esta categoría si que vemos una gran diferencia, concentrando las ventas entre los Adultos y los Adultos Mayores, destacando éstos últimos.	
+
+**5.3 Análisis Descriptivo Temporal:**
+
+Creamos una nueva hoja llamada "Análisis_Descriptivo_Temp" en la que vamos a analizar la columna temporal mediante una tabla dinámica.
+
+- **Fecha de Venta:** Vemos una progresión en las ventas entre el 2023 y 2024. En cuanto al año 2025 no puede tenerse muy en cuenta ya que no está el año completo.
 
 ## 4. Resultados y Conclusiones 📋
 - En términos generales vemos lo siguiente:
