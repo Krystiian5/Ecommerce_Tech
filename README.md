@@ -89,6 +89,16 @@ Creamos una nueva hoja llamada "Análisis_Descriptivo_Temp" en la que vamos a an
 
 - **Fecha de Venta:** Vemos una progresión en las ventas entre el 2023 y 2024. En cuanto al año 2025 no puede tenerse muy en cuenta ya que no está el año completo.
 
+**5.4 Creación de KPIs:**
+
+Vamos a crear KPIs para nuestra dashboard, de lo siguiente:
+- Beneficios Totales.
+- Beneficio Promedio por Transacción.
+- Ventas Totales.
+- Descuento Promedio por Transacción.
+
+Para ello, creamos una hoja nueva de KPIs y los creamos mediante tablas dinámicas.
+
 ## 4. Resultados y Conclusiones 📋
 - En términos generales vemos lo siguiente:
 	- El producto que genera más beneficios son los smartwatch y el que menos sería el Laptop.
