@@ -13,6 +13,7 @@ El objetivo principal de este proyecto es crear un dashboard interactivo que fac
 --- Excels
 	-- Carga_Transform_Datos.xlsx
 	-- Analisis_Datos.xlsx
+	-- Dashboard.xlsx
 
 ```
 ## 3. Descripción de las columnnas del conjunto de datos
@@ -89,15 +90,14 @@ Creamos una nueva hoja llamada "Análisis_Descriptivo_Temp" en la que vamos a an
 
 - **Fecha de Venta:** Vemos una progresión en las ventas entre el 2023 y 2024. En cuanto al año 2025 no puede tenerse muy en cuenta ya que no está el año completo.
 
-**5.4 Creación de KPIs:**
+**5.4 Dashboard: Creación de KPIs, tablas dinámicas y gráficos:**
 
-Vamos a crear KPIs para nuestra dashboard, de lo siguiente:
+Creamos una nueva hoja de Excel para crear KPIs y tablas con los gráficos a implementar en la dashboard.
+KPIs para nuestra dashboard de lo siguiente:
 - Beneficios Totales.
 - Beneficio Promedio por Transacción.
-- Ventas Totales.
-- Descuento Promedio por Transacción.
+- Descuento Promedio Aplicado.
 
-Para ello, creamos una hoja nueva de KPIs y los creamos mediante tablas dinámicas.
 
 ## 4. Resultados y Conclusiones 📋
 - En términos generales vemos lo siguiente:
