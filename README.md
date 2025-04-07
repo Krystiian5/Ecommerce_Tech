@@ -18,25 +18,26 @@ El objetivo principal de este proyecto es crear un dashboard interactivo que fac
 ```
 ## 3. Descripción de las columnnas del conjunto de datos
 
-**Hoja: Ecommerce_Product_Sales.csv**
+**Hoja: Carga_Transform_Datos.xlsx**
 Esta hoja contiene las siguientes columnas clave:
 ### Datos de los usuarios:
-- **Venta_ID:** Identificador único de cada venta.
-- **Edad del cliente:** Edad del usuario.
-- **Género_:** Género del usuario (Masculino, Femenino).
+- **ID_Venta:** Identificador único de cada venta.
+- **Edad:** Edad del usuario.
+- **Género:** Género del usuario (Masculino, Femenino).
 - **Región:** Ubicación del usuario (Continentes).
 ### Datos del Producto:
-- **Tipo de Producto:** 5 tipos distintos de productos (Teléfono inteligente, reloj inteligente, tablet, portátil y auriculares).
+- **Producto:** 5 tipos distintos de productos (Teléfono inteligente, reloj inteligente, tablet, portátil y auriculares).
 - **Categoría:** Divididos en 2 categorías (Electrónica y Accesorios).
 
 ### Datos de Transacción
 - **Precio:** Precio por unidad.
 - **Cantidad:** Número de cantidades vendidas.
-- **Ventas Totales:** Valor total de ventas.
 - **Descuento:** Porcentaje de descuento aplicado.
+- **Descuento_Aplicado:** Determina si se ha aplicado descuento o no.
+- **Cantidad_Descontada:** Cálculo de la cantidad descontada.
 - **Método de Pago:** Método con el que se ha realizado el pago (Tarjeta de Débito, Crédito, Paypal o transferencia bancaria).
-- **Beneficio Total:** Ingreso neto tras aplicar descuentos.
-- **Fecha de venta:** Momento en el que se realizó la transacción.
+- **Beneficios_Totales:** Ingreso neto tras aplicar descuentos.
+- **Fecha_venta:** Momento en el que se realizó la transacción.
 
 ## 4. Transformación y Limpieza de Datos 🗂️
 A continuación, se explicarán los pasos que se han seguido para transformar y limpiar los datos del csv original "ecommerce_product_sales.csv"
@@ -45,9 +46,9 @@ A continuación, se explicarán los pasos que se han seguido para transformar y 
 - Se comprueba si hay duplicados. En este caso no se encuentran duplicados.
 - Crear una hoja nueva de "Tablas_Auxiliares" para traducir del inglés al español encabezados, Productos, Categoría, Género, Método de pago y Región.
 - Ocultar columnas con los datos en inglés.
-- Columnas Precio, Descuento y Ventas Totales no están reconocidas como números ya que están situados a la izquierda. Esto es debido a que hay que cambiar el "punto" por la "coma". Lo reemplazamos.
-- Cambiamos el formato de Precio y Ventas totales a número y el de Descuento a formato porcentaje.
-- Comprobar si la columna Ventas Totales está bien calculada. Tiene que ser el precio multiplicado por la cantidad restándole el descuento. Está bien en este caso.
+- Columnas Precio, Descuento y Beneficios Totales no están reconocidas como números ya que están situados a la izquierda. Esto es debido a que hay que cambiar el "punto" por la "coma". Lo reemplazamos.
+- Cambiamos el formato de Precio y Beneficios totales a número y el de Descuento a formato porcentaje.
+- Comprobar si la columna Beneficios Totales está bien calculada. Tiene que ser el precio multiplicado por la cantidad restándole el descuento. Está bien en este caso.
 - Crear una nueva columna "Rango_Edad": Nos sirve para categorizar las edades por grupos.
 - Crear nueva columna "Descuento_Aplicado": Nos sirve para identificar si se ha aplicado descuento o no.
 - Crear nueva columna "Cantidad_Descontada": Nos sirve para calcular el total del dinero descontado.
@@ -92,21 +93,48 @@ Creamos una nueva hoja llamada "Análisis_Descriptivo_Temp" en la que vamos a an
 
 **5.4 Dashboard: Creación de KPIs, tablas dinámicas y gráficos:**
 
-Creamos una nueva hoja de Excel para crear KPIs y tablas con los gráficos a implementar en la dashboard.
-KPIs para nuestra dashboard de lo siguiente:
+**Creación de KPIs**
+
+Creamos una nueva hoja de Excel para crear KPIs para nuestra dashboard de lo siguiente:
 - Beneficios Totales.
 - Beneficio Promedio por Transacción.
 - Descuento Promedio Aplicado.
 
+**Creación de tablas dinámicas y gráficos**
+
+Creamos una nueva hoja de Datos_tablas con tablas dinámicas y los gráficos a implementar en la dashboard.
+
+Las tablas dinámicas y gráficos creados son las siguientes:
+- Beneficios Región y gráfico de columnas.
+- Beneficios Género y gráfico circular.
+- Beneficios Rango Edad y gráfico de columnas.
+- Beneficios Producto y gráfico de columnas.
+- Beneficios Categoría y gráfico de columnas con análisis bi variado.
+- Beneficios Fecha Venta y gráfico de líneas.
+- Descuento Aplicado y gráfico de columnas.
+- Método de Pago y gráficos circulares para cada método de pago.
+
+**Dashboard**
+
+Creamos una nueva hoja Dashboard_Beneficios en la que diseñamos nuestro dashboard dinámico. Está construido de la siguiente manera:
+
+- Título y logo en la parte superior central.
+- KPIs situados en la parte superior central. 
+- En la parte central, debajo de los KPIs, situaremos los tres gráficos en referencia a los datos de los usuarios (Región, Género y Rango Edad).
+- A continuación, los gráficos referentes a los datos del producto (Beneficios por producto y categoría)
+- Acabando con el gráfico con datos temporales (Fecha venta).
+- En la parte derecha del dashboard, colocamos los gráficos que hacen referencia a los datos de Transacción (Método de pago y Descuento Aplicado).
+- En la parte izquierda del dashboard, colocamos segmentadores que podemos utilizar para interactuar con nuestra dashboard. Los segmentadores añadidos son por: Región, Género, Rango Edad, Producto y Fecha de venta en Años.
+
 
 ## 4. Resultados y Conclusiones 📋
 - En términos generales vemos lo siguiente:
-	- El producto que genera más beneficios son los smartwatch y el que menos sería el Laptop.
-	- La región que genera más beneficios es Sud América y la que menos Europa.
-	- El año con más beneficio generado es el 2024.
+	- El producto que genera más beneficios son los relojes inteligentes y el que menos sería el portátil.
+	- La región que genera más beneficios es América del Sur y la que menos Europa.
+	- El año con más beneficio generado es el 2024. El año 2025 aún no es relevante ya que solo hay dos meses de análisis.
 -	En cuanto a los beneficios a lo largo del tiempo vemos que en el 2023 hay un aumento de los mismos en primavera y en los meses de invierno son los más bajos. Sin embargo, en el 2024, identificamos un comportamiento de los beneficios más lineal y constante a lo largo del año.
--	En relación al rango de edad que genera más beneficios, estaría entre los 48 y 57 años. Sin embargo, el rango de edad con menos beneficios generados se encuentra entre los 58 y 67 años. 
--	Crear estrategias de marketing más efectivas para mejorar los beneficios en términos generales en la época de invierno, del tipo de producto como es el Laptop, en Europa y en la población que se encuentra en un rango de edad entre los 58 y 67 años.
+-	En relación al rango de edad que genera más beneficios, estaría entre los 48 y 57 años. Sin embargo, el rango de edad con menos beneficios generados se encuentra entre los 58 y 67 años.
+-	Crear estrategias de marketing más efectivas para mejorar los beneficios en términos generales en la época de invierno, del tipo de producto como es el Portátil, en Europa y en la población que se encuentra en un rango de edad entre los 58 y 67 años.
 
 ## Fuente de Datos 📖
 
