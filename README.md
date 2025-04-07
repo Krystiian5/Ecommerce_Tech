@@ -127,7 +127,7 @@ Creamos una nueva hoja Dashboard_Beneficios en la que diseñamos nuestro dashboa
 - En la parte izquierda del dashboard, colocamos segmentadores que podemos utilizar para interactuar con nuestra dashboard. Los segmentadores añadidos son por: Región, Género, Rango Edad, Producto y Fecha de venta en Años.
 
 
-## 4. Resultados y Conclusiones 📋
+## 6. Resultados y Conclusiones 📋
 - En términos generales vemos lo siguiente:
 	- El producto que genera más beneficios son los relojes inteligentes y el que menos sería el portátil.
 	- La región que genera más beneficios es América del Sur y la que menos Europa.
